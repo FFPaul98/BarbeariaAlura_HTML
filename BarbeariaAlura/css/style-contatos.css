@@ -1,0 +1,64 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.checkbox{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.btnEnviar{
+    width: 30%;
+    padding: 15px 0;
+    background-color: goldenrod;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.btnEnviar:hover{
+    background-color: orange;
+    transform: scale(1.05) /*auementar*/ /*rotate(10deg) /*rotacionar*/
+}
+
+table{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+thead{
+    background-color: rgb(75, 73, 73);
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 6px 8px;
+}

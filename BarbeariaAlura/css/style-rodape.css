@@ -1,0 +1,15 @@
+footer{
+    text-align: center;
+    background: url(../img/bg.jpg) ;
+    padding: 40px 0px;
+}
+
+footer .copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+.imgRodape{
+    height: 90px;
+}

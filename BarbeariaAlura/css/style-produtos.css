@@ -1,0 +1,55 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    padding: 30px 20px;
+    margin: 0 1.5%;
+    box-sizing: border-box; /*Para não somar [.produto li {margin 1.5%}] + [.produto-descricao{30px}] e estourar os lados */
+    border-color: black;
+    border-width: 5px;
+    border-style: dashed;
+    border-radius: 20px;
+}
+
+.produtos li:hover{
+    border-color: goldenrod;
+}
+
+.produtos li:active{
+    border-color: greenyellow;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.produtos li:hover .produto-preco{ /*add por mim*/
+    font-size: 25px;
+    text-shadow: 0px 0px 7px green; 
+}

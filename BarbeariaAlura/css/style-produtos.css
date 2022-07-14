@@ -2,13 +2,40 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
+main{
+    background: linear-gradient(to bottom, #fefefe 30%, #969393);
+    min-height: 750px;
+}
+
 .produtos{
     width: 940px;
     margin: 0 auto;
     padding: 50px 0;
 }
 
-.produtos li{
+.info-produtos{
+    text-align: center;
+}
+
+.info-produtos h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.info-produtos p{
+    line-height: 1.5em;
+    border-bottom: 1px dotted black;
+    padding-bottom: 20px ;
+}
+
+.lista-produtos{
+   margin: 40px 0;
+}
+
+.lista-produtos li{
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -22,21 +49,33 @@ body{
     border-radius: 20px;
 }
 
-.produtos li:hover{
+.lista-produtos li, .lista-produtos h3, .produto-preco{
+    transition: all 700ms;
+}
+
+.lista-produtos li:hover{
     border-color: goldenrod;
 }
 
-.produtos li:active{
+.lista-produtos li:active{
     border-color: greenyellow;
 }
 
-.produtos h2{
+.lista-produtos h3{
     font-size: 30px;
     font-weight: bold;
 }
 
-.produtos li:hover h2{
-    font-size: 34px;
+.lista-produtos li:hover h3{
+    font-size: 36px;
+}
+
+.lista-produtos li:nth-child(3) h3{
+    font-size: 26px;
+}
+
+.lista-produtos li:nth-child(3):hover h3{
+    font-size: 30px;
 }
 
 .produto-descricao{
@@ -49,7 +88,7 @@ body{
     margin-top: 10px;
 }
 
-.produtos li:hover .produto-preco{ /*add por mim*/
+.lista-produtos li:hover .produto-preco{ /*add por mim*/
     font-size: 25px;
     text-shadow: 0px 0px 7px green; 
 }

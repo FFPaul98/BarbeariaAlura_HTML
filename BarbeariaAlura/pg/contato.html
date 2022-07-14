@@ -25,66 +25,67 @@
             </div>
         </header>        
         <main>
-            <form>
-                <label for="nomeSobrenome">Nome e Sobrenome</label>
-                <input type="text" id="nomeSobrenome" class="input-padrao" required>
+            <section class="text-faleConosco">
+                <h2>Como Vai?</h2>
+                <p>Fele com a gente para ficar por dentro dos eventos, novidades, ofertas e muito mias!</p>
+            </section>
+            <div class="info-contato">
+                <form class ="form-contato" id="form-contato">
+                    <label for="nomeSobrenome">Nome e Sobrenome</label>
+                    <input type="text" id="nomeSobrenome" class="input-padrao" required>
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@domino.com">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@domino.com">
 
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
-                
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+                    <label for="telefone">Telefone</label>
+                    <input onkeydown=" return mascaraTelefone(event)" type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                    
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
 
-                <fieldset id="radios-contato">
-                    <legend>Como prefere ser contatado?</legend>
+                    <fieldset class="radios-contato" id="radios-contato">
+                        <legend>Como prefere ser contatado?</legend>
 
-                    <label for="radio-email"><input name="contato" type="radio" value="email" id="radio-email" checked>E-mail</label>
+                        <label for="radio-whatsapp"><input name="contato" type="radio" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                        <label for="radio-email"><input name="contato" type="radio" value="email" id="radio-email" >E-mail</label>
+                        <label for="radio-telefone"><input name="contato" type="radio" value="telefone" id="radio-telefone">Telefone</label>
+                    </fieldset>
 
-                    <label for="radio-telefone"><input name="contato" type="radio" value="telefone" id="radio-telefone">Telefone</label>
+                    <label class="checkbox"><input class="checkbox" type="checkbox" value="Check" id="Check" checked>Gostaria de receber nossas novidades?</label>
 
-                    <label for="radio-whatsapp"><input name="contato" type="radio" value="whatsapp" id="radio-whatsapp">WhatsApp</label>
-                   
-                </fieldset>
-
-                <label class="checkbox"><input class="checkbox" type="checkbox" value="Check" id="Check" checked>Gostaria de receber nossas novidades?</label>
-
-                <input value="EnviarForm" class="btnEnviar" type="submit">
-            </form>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dia</td>
-                        <th>Horário</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Segunda - Sexta</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Sabado</td>
-                        <td>8h ~ 18h</td>
-                    </tr>
-                    <tr>
-                        <td>Domingo</td>
-                        <td>8h ~ 12h</td>
-                    </tr>
-                </tbody>
-            </table>
-
+                    <input value="EnviarForm" class="btnEnviar" type="submit">
+                </form><table class="tabela-horarios">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Atendimento </th>
+                        </tr>
+                        <tr>
+                            <th>Dia</td>
+                            <th>Horário</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda - Sexta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Sabado</td>
+                            <td>8h ~ 18h</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>8h ~ 12h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
         <footer>
             <img class="imgRodape" src="../img/logo-branco.png"  alt="Logo da Barbearia Alura - Branco - Silhueta de um rosto com cabeo e barba">
             <p class="copyright">&copy; Copyright Barbearia Alura - <span id="ano"></span> </p>
         </footer>
     </body>
-
-    <script src="../js/copy.js">
-    </script>   
-
+    <script src="../js/telefone.js"></script>   
+    <script src="../js/copy.js"></script>
 </html>

@@ -50,6 +50,7 @@ body{
 
 .paragrafo-principal::first-letter{
     font-size: 40px;
+    font-family: 'Pinyon Script', cursive;
 }
 
 .principal-conteudo strong {
@@ -113,10 +114,15 @@ body{
     content: "★ ";
 }
 
+.itens:hover{
+    text-shadow: 0 0 2px white;
+}
+
 .lista-beneficios .itens{
 	line-height: 2em;
     font-style: italic;
     font-weight: bold;
+    cursor: default;
 }
 
 .imagem-beneficios{
@@ -130,6 +136,7 @@ body{
 
 .imagem-beneficios:hover{
 	opacity: 1;
+    transform: scale(1.05);
 }
 
 .video{

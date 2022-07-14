@@ -12,6 +12,7 @@ header{
 }
 
 .logo{
+    margin-left: 20px;
     width: 120px;
     height: 170px;
     padding: 0 30px;
@@ -23,11 +24,12 @@ header{
 }
 
 .logo:hover{
-    height: 169px;
+    transform: scale(1.05);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658), -10px 10px 10px rgba(0, 0, 0, 0.658), 10px -10px 10px rgba(0, 0, 0, 0.658), -10px -10px 10px rgba(0, 0, 0, 0.658)   ;
 }
 
 .logo:active{
+    transform: scale(1);
     opacity: 0.5;
     box-shadow:none;
 }

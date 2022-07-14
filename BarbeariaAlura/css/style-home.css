@@ -99,8 +99,9 @@ body{
 }
 
 .beneficios span{
-    color: #e2dede;
-    border-color: #e2dede;;
+    color: #fefefe;
+    border-color: #fefefe;;
+    text-shadow: 4px 0px 7px white;
 }
 
 .lista-beneficios{
